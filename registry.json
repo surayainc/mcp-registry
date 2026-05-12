@@ -1,0 +1,256 @@
+{
+  "schema_version": "0.1",
+  "updated_at": "2026-05-23",
+  "entries": [
+    {
+      "slug": "github",
+      "name": "GitHub MCP Server",
+      "category": "code-hosting",
+      "tier": "trusted",
+      "source": "https://github.com/github/github-mcp-server",
+      "transport": "stdio",
+      "auth": "github-pat-or-oauth",
+      "description": "Read + write GitHub repos, issues, PRs, releases."
+    },
+    {
+      "slug": "filesystem",
+      "name": "Filesystem MCP",
+      "category": "fs",
+      "tier": "trusted",
+      "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem",
+      "transport": "stdio",
+      "auth": "none",
+      "description": "Read + write local filesystem within configured roots."
+    },
+    {
+      "slug": "postgres",
+      "name": "Postgres MCP",
+      "category": "db",
+      "tier": "trusted",
+      "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/postgres",
+      "transport": "stdio",
+      "auth": "conn-string",
+      "description": "Schema introspection + read-only SQL against a Postgres database."
+    },
+    {
+      "slug": "sqlite",
+      "name": "SQLite MCP",
+      "category": "db",
+      "tier": "trusted",
+      "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/sqlite",
+      "transport": "stdio",
+      "auth": "none",
+      "description": "Read + write SQLite databases."
+    },
+    {
+      "slug": "puppeteer",
+      "name": "Puppeteer MCP",
+      "category": "browser",
+      "tier": "trusted",
+      "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/puppeteer",
+      "transport": "stdio",
+      "auth": "none",
+      "description": "Headless Chrome automation for web scraping + screenshots."
+    },
+    {
+      "slug": "slack",
+      "name": "Slack MCP",
+      "category": "comms",
+      "tier": "trusted",
+      "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/slack",
+      "transport": "stdio",
+      "auth": "slack-bot-token",
+      "description": "Send messages, read channels, manage Slack workspaces."
+    },
+    {
+      "slug": "linear",
+      "name": "Linear MCP",
+      "category": "project-management",
+      "tier": "trusted",
+      "source": "https://github.com/jerhadf/linear-mcp-server",
+      "transport": "stdio",
+      "auth": "linear-api-key",
+      "description": "CRUD on Linear issues, projects, cycles."
+    },
+    {
+      "slug": "fetch",
+      "name": "Fetch MCP",
+      "category": "web",
+      "tier": "trusted",
+      "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/fetch",
+      "transport": "stdio",
+      "auth": "none",
+      "description": "HTTP fetch + Markdown extraction."
+    },
+    {
+      "slug": "memory",
+      "name": "Memory MCP (reference)",
+      "category": "memory",
+      "tier": "experimental",
+      "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/memory",
+      "transport": "stdio",
+      "auth": "none",
+      "description": "Reference knowledge-graph memory server. Not as load-bearing as Suraya brain MCP but useful for prototyping."
+    },
+    {
+      "slug": "google-drive",
+      "name": "Google Drive MCP",
+      "category": "storage",
+      "tier": "trusted",
+      "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/gdrive",
+      "transport": "stdio",
+      "auth": "google-oauth",
+      "description": "Read Google Drive files + folders."
+    },
+    {
+      "slug": "google-maps",
+      "name": "Google Maps MCP",
+      "category": "geo",
+      "tier": "trusted",
+      "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/google-maps",
+      "transport": "stdio",
+      "auth": "google-api-key",
+      "description": "Maps + Places + Geocoding queries."
+    },
+    {
+      "slug": "brave-search",
+      "name": "Brave Search MCP",
+      "category": "search",
+      "tier": "trusted",
+      "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search",
+      "transport": "stdio",
+      "auth": "brave-api-key",
+      "description": "Web search via Brave API."
+    },
+    {
+      "slug": "stripe",
+      "name": "Stripe MCP",
+      "category": "payments",
+      "tier": "trusted",
+      "source": "https://github.com/stripe/agent-toolkit",
+      "transport": "stdio",
+      "auth": "stripe-secret-key",
+      "description": "Stripe operations via the Agent Toolkit."
+    },
+    {
+      "slug": "supabase",
+      "name": "Supabase MCP",
+      "category": "db",
+      "tier": "trusted",
+      "source": "https://github.com/supabase-community/supabase-mcp",
+      "transport": "stdio",
+      "auth": "supabase-access-token",
+      "description": "Supabase project management + SQL."
+    },
+    {
+      "slug": "neon",
+      "name": "Neon MCP",
+      "category": "db",
+      "tier": "trusted",
+      "source": "https://github.com/neondatabase/mcp-server-neon",
+      "transport": "stdio",
+      "auth": "neon-api-key",
+      "description": "Neon Postgres project management + connection-string exchange."
+    },
+    {
+      "slug": "anthropic-files",
+      "name": "Anthropic Files API",
+      "category": "anthropic",
+      "tier": "trusted",
+      "source": "https://docs.anthropic.com/en/api/files",
+      "transport": "https",
+      "auth": "anthropic-api-key",
+      "description": "Upload files referenced in Anthropic API messages."
+    },
+    {
+      "slug": "anthropic-code-execution",
+      "name": "Anthropic Code Execution (server-side)",
+      "category": "anthropic",
+      "tier": "trusted",
+      "source": "https://docs.anthropic.com/en/docs/agents-and-tools/tool-use/code-execution-tool",
+      "transport": "anthropic-builtin",
+      "auth": "anthropic-api-key",
+      "description": "Anthropic-hosted Python sandbox."
+    },
+    {
+      "slug": "vercel",
+      "name": "Vercel MCP",
+      "category": "deploy",
+      "tier": "experimental",
+      "source": "https://vercel.com/changelog/vercel-mcp",
+      "transport": "stdio",
+      "auth": "vercel-oauth",
+      "description": "Vercel project + deployment management."
+    },
+    {
+      "slug": "cloudflare-workers",
+      "name": "Cloudflare Workers MCP",
+      "category": "deploy",
+      "tier": "experimental",
+      "source": "https://github.com/cloudflare/mcp-server-cloudflare",
+      "transport": "stdio",
+      "auth": "cloudflare-api-token",
+      "description": "CF Workers + KV + R2 operations."
+    },
+    {
+      "slug": "sentry",
+      "name": "Sentry MCP",
+      "category": "monitoring",
+      "tier": "trusted",
+      "source": "https://github.com/getsentry/sentry-mcp",
+      "transport": "stdio",
+      "auth": "sentry-auth-token",
+      "description": "Search + investigate Sentry issues."
+    },
+    {
+      "slug": "git",
+      "name": "Git MCP",
+      "category": "code-hosting",
+      "tier": "trusted",
+      "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/git",
+      "transport": "stdio",
+      "auth": "none",
+      "description": "Local git operations (status, diff, log, blame, etc)."
+    },
+    {
+      "slug": "everart",
+      "name": "EverArt MCP",
+      "category": "media",
+      "tier": "experimental",
+      "source": "https://github.com/modelcontextprotocol/servers/tree/main/src/everart",
+      "transport": "stdio",
+      "auth": "everart-api-key",
+      "description": "Image generation via EverArt API."
+    },
+    {
+      "slug": "suraya-brain",
+      "name": "Suraya Brain MCP",
+      "category": "memory",
+      "tier": "trusted",
+      "source": "https://github.com/surayainc/suraya-brain",
+      "transport": "stdio",
+      "auth": "per-project-hmac",
+      "description": "Typed observation-graph retrieval from the operator's project-scoped brain. The C1 MCP server."
+    },
+    {
+      "slug": "notion",
+      "name": "Notion MCP",
+      "category": "docs",
+      "tier": "trusted",
+      "source": "https://github.com/makenotion/notion-mcp-server",
+      "transport": "stdio",
+      "auth": "notion-integration-token",
+      "description": "Read + write Notion pages, databases, comments."
+    },
+    {
+      "slug": "playwright",
+      "name": "Playwright MCP",
+      "category": "browser",
+      "tier": "trusted",
+      "source": "https://github.com/microsoft/playwright-mcp",
+      "transport": "stdio",
+      "auth": "none",
+      "description": "Cross-browser automation via Playwright."
+    }
+  ]
+}

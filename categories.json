@@ -1,0 +1,20 @@
+{
+  "categories": {
+    "anthropic": "Anthropic-hosted built-ins (code execution, files API).",
+    "browser": "Headless browser automation.",
+    "code-hosting": "Git platforms — GitHub, GitLab, Bitbucket.",
+    "comms": "Messaging — Slack, Discord, email.",
+    "db": "Databases — Postgres, SQLite, Supabase, Neon.",
+    "deploy": "Hosting + deploy platforms — Vercel, Cloudflare, Fly.",
+    "docs": "Documentation + knowledge bases — Notion, Confluence.",
+    "fs": "Filesystem read + write.",
+    "geo": "Geospatial APIs.",
+    "media": "Image/video generation.",
+    "memory": "Memory + knowledge-graph servers.",
+    "monitoring": "Observability — Sentry, Datadog, Grafana.",
+    "payments": "Payment platforms — Stripe.",
+    "project-management": "Issue trackers — Linear, Jira, GitHub Projects.",
+    "search": "Web search.",
+    "storage": "Object + file storage — S3, Google Drive."
+  }
+}
