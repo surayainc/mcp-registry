@@ -251,6 +251,16 @@
       "transport": "stdio",
       "auth": "none",
       "description": "Cross-browser automation via Playwright."
+    },
+    {
+      "auth": "none-for-public-card",
+      "category": "business-data",
+      "tier": "experimental",
+      "description": "Background check any company in the world: registration, executives, courts and finances. Remote: https://statsnet.co/mcp",
+      "transport": "http",
+      "name": "Statsnet",
+      "slug": "statsnet",
+      "source": "https://github.com/usenetstate/statsnet-mcp"
     }
   ]
 }
